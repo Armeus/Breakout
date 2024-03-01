@@ -12,6 +12,7 @@ class Blocks(Turtle):
         self.blocks = []
         self.create_blocks()
 
+    # Creates all blocks used in game
     def create_blocks(self):
         for color in ROW_COLORS:
             self.x = START_X
@@ -19,6 +20,7 @@ class Blocks(Turtle):
             self.create_row(color)
             self.y += 25
 
+    # Creates a row of blocks
     def create_row(self, color):
         for _ in range(12):
             new_block = Turtle('square')
