@@ -31,3 +31,7 @@ class Ball(Turtle):
     def reset_position(self):
         self.goto(STARTING_POSITION)
         self.x_move = MOVE_SPEED
+
+    def stop(self):
+        self.x_move = 0
+        self.y_move = 0

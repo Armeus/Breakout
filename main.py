@@ -51,4 +51,11 @@ while game_is_on:
         paddle.reset_position()
         scoreboard.decrease_lives()
 
+    # Detect game over
+    if scoreboard.lives == 0:
+        ball.stop()
+        blocks.hide()
+        scoreboard.game_over()
+
+
 screen.exitonclick()

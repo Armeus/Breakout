@@ -32,3 +32,7 @@ class Blocks(Turtle):
             self.blocks.append(new_block)
             self.x += 66
 
+    # Hides all blocks
+    def hide(self):
+        for block in self.blocks:
+            block.hideturtle()
